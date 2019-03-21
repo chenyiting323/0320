@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>輸入成績</h3>
+<input type="number" id="myscore">
+<button onclick="myFunction()">Check</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var score = parseFloat(document.getElementById("myscore").value); 
+  var result;
+  if (score < 60) {
+    result = "再加油";
+  } else {
+    result = "非常好";
+  }
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>

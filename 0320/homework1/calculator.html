@@ -1,0 +1,52 @@
+<meta charset="utf-8">
+<head>
+	<body>
+		<input type="number" id="myData" >
+		<input type="number" id="myData2">
+
+		<br>
+		<script>
+			function add() {
+				var x,y
+				x=parseFloat(document.getElementById("myData").value);
+				y=parseFloat(document.getElementById("myData2").value);
+				document.getElementById("result").innerHTML=x+y;
+			}
+			function minus() {
+				var x,y
+				x=parseFloat(document.getElementById("myData").value);
+				y=parseFloat(document.getElementById("myData2").value);
+				document.getElementById("result").innerHTML=x-y;
+			}
+			function multiply() {
+				var x,y
+				x=parseFloat(document.getElementById("myData").value);
+				y=parseFloat(document.getElementById("myData2").value);
+				document.getElementById("result").innerHTML=x*y;
+			}
+			function divided() {
+				var x,y
+				x=parseFloat(document.getElementById("myData").value);
+				y=parseFloat(document.getElementById("myData2").value);
+				document.getElementById("result").innerHTML=x/y;
+			}
+			function _clear() {
+			
+				document.getElementById("myData").value="";
+				document.getElementById("myData2").value="";
+				document.getElementById("result").value="";
+			}
+		</script>
+
+
+		<br>
+		<button onclick="add()">+</button>
+		<button onclick="minus()">-</button>
+		<button onclick="multiply()">×</button>
+		<button onclick="divided()">÷</button>
+		<button onclick="_clear()">C</button>
+
+		<h2>計算結果:</h2>
+		<h2><output id="result"></output></h2>
+	</body>
+</head>
